@@ -1,0 +1,110 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 1rem 7rem;
+  background: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: ease-in-out 0.3s;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.a11yHidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.MainMenu {
+  display: flex;
+}
+.MenuLists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-left: 20px;
+  list-style: none;
+  padding-inline-start: 0;
+}
+.SubButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.defaultMenu {
+  width: 113.8px;
+  height: 40px;
+  justify-content: center;
+  background-color: white;
+  transition: ease-in-out 0.3s;
+  display: flex;
+
+  &:hover {
+    border-radius: 8px;
+    background: #d9d9d9;
+  }
+  &:hover .menuImage {
+    transform: rotate(180deg);
+  }
+}
+.menuImage {
+  transition: ease-in-out 0.3s;
+}
+
+.defaultText {
+  color: #343e4b;
+  font-family: Pretendard Variable, Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI,
+    Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+  font-size: 17.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+.language {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  padding: 4px 3px;
+  & .language-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("/src/assets/language.svg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.login {
+  width: 68px;
+  height: 38px;
+  color: #191f28;
+  background-color: #f5f5f5;
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+.ask {
+  width: 84px;
+  height: 38px;
+  background-color: #7353ea;
+  color: #fff;
+
+  &:hover {
+    background-color: #613dd6;
+  }
+}
