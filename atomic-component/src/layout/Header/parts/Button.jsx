@@ -1,5 +1,4 @@
 function Button({ type }) {
-  let buttonContent;
   let buttonText = "";
   let buttonClass = "";
 
