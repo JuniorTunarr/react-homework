@@ -1,8 +1,8 @@
-import OpeningDay from "./OpeningDay";
-import LectureHall from "./LectureHall";
-import CourseCategory from "./CourseCategory";
-import ShowCase from "./ShowCase";
-import Review from "./Review";
+import OpeningDay from "./Contents/OpeningDay";
+import LectureHall from "./Contents/LectureHall";
+import CourseCategory from "./Contents/CourseCategory";
+import ShowCase from "./Contents/ShowCase";
+import Review from "./Contents/Review";
 
 const HomeContents = () => {
   return (

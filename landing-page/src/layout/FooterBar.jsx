@@ -1,7 +1,7 @@
-import FooterAbout from "@/components/FooterAbout";
-import FooterCopyright from "@/components/FooterCopyright";
-import FooterIllust from "@/components/FooterIllust";
-import FooterInfo from "@/components/FooterInfo";
+import FooterAbout from "@/components/Footer/FooterAbout";
+import FooterCopyright from "@/components/Footer/FooterCopyright";
+import FooterIllust from "@/components/Footer/FooterIllust";
+import FooterInfo from "@/components/Footer/FooterInfo";
 
 function FooterBar() {
   return (

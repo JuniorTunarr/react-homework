@@ -1,5 +1,5 @@
-import GlobalNavigationBar from "@/components/GlobalNavigationBar";
-import HeaderHeading from "@/components/HeaderHeading";
+import GlobalNavigationBar from "@/components/Header/GlobalNavigationBar";
+import HeaderHeading from "@/components/Header/HeaderHeading";
 import { useState, useEffect } from "react";
 
 function HeaderBar() {
@@ -18,7 +18,7 @@ function HeaderBar() {
 
   return (
     <header
-      className={`w-full h-[6.25rem]${
+      className={`w-full h-[6.5rem]${
         isFixed ? " fixed top-0 left-0 z-[50]" : " relative"
       }`}
       role="banner"
