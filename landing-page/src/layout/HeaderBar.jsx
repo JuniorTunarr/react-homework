@@ -1,9 +1,32 @@
-import Heading from "@/components/Heading";
+import GlobalNavigationBar from "@/components/GlobalNavigationBar";
+import HeaderHeading from "@/components/HeaderHeading";
+import { useState, useEffect } from "react";
 
 function HeaderBar() {
+  const [isFixed, setIsFixed] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 65) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="p-5 bg-indigo-950 text-indigo-50">
-      <Heading />
+    <header
+      className={`w-full h-[6.25rem]${
+        isFixed ? " fixed top-0 left-0 z-[50]" : " relative"
+      }`}
+      role="banner"
+    >
+      <div className="headerWrapper flex justify-between max-w-[73.75rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full -my-1 items-center">
+        <HeaderHeading />
+        <GlobalNavigationBar />
+      </div>
     </header>
   );
 }

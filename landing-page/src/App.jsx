@@ -1,9 +1,12 @@
+import HomeWrapper from "./components/Home/HomeWrapper";
 import RootLayout from "./layout/RootLayout";
 
 function App() {
   return (
     <div className="App">
-      <RootLayout></RootLayout>
+      <RootLayout>
+        <HomeWrapper />
+      </RootLayout>
     </div>
   );
 }

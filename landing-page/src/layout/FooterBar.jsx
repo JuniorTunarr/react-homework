@@ -1,15 +1,17 @@
-import { useState } from "react";
+import FooterAbout from "@/components/FooterAbout";
+import FooterCopyright from "@/components/FooterCopyright";
+import FooterIllust from "@/components/FooterIllust";
+import FooterInfo from "@/components/FooterInfo";
 
 function FooterBar() {
-  // 현재(오늘) 년도를 화면에 출력하는 상태를 설정
-  const [currentYear] = useState(() => new Date().getFullYear());
-
   return (
-    <footer className="p-5 grid place-content-center bg-slate-200">
-      <small className="text-base text-slate-700">
-        Copyright <b>{currentYear}</b> &copy; 모든 저작권은{" "}
-        <strong>이듬(EUID)</strong>에 있습니다.
-      </small>
+    <footer className="relative w-full h-full">
+      <div className="footerWrapper p-5 grid place-content-start max-w-[73.75rem] absolute bottom-5 left-1/2 -translate-x-1/2">
+        <FooterAbout />
+        <FooterInfo />
+        <FooterCopyright />
+        <FooterIllust />
+      </div>
     </footer>
   );
 }
