@@ -54,11 +54,15 @@ components
      ├── HomeWrapper.jsx
      ├── HomeHeading.jsx
      ├── HomeContents.jsx
-     ├── CourseCategory.jsx
-     ├── .jsx
-     ├── MenuLists.jsx
-     ├── MenuList.jsx
-     └── Button.jsx
+     └── Contents
+          ├── OpeningDay.jsx
+          ├── CourseCategory.jsx
+          ├── CourseItems.jsx
+          ├── LectureHall.jsx
+          ├── ShowCase.jsx
+          ├── ShowItems.jsx
+          ├── Review.jsx
+          └── ReviewItems.jsx
 
 ```
 
