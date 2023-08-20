@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Spinner from "@/Common/Spinner";
+import Spinner from "@/components/Common/Spinner";
 
 function CourseItems() {
   const [courses, setCourses] = useState(null);

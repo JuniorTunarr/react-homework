@@ -1,4 +1,4 @@
-import SubTitleWrapper from "@/Common/SubTitleWrapper";
+import SubTitleWrapper from "@/components/Common/SubTitleWrapper";
 import ShowItems from "./showItems";
 
 function ShowCase() {

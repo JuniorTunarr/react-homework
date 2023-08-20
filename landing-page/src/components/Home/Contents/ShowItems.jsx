@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import Spinner from "@/Common/Spinner";
+import Spinner from "@/components/Common/Spinner";
 
 function ShowItems() {
   const [showCases, setShowCases] = useState(null);

@@ -2,7 +2,7 @@ import { useState } from "react";
 import SubTitleWrapper from "@/components/Common/SubTitleWrapper";
 import ReviewItems from "./ReviewItems";
 import { useEffect } from "react";
-import Spinner from "@/Common/Spinner";
+import Spinner from "@/components/Common/Spinner";
 
 function Review() {
   const [reviews, setReviews] = useState(null);
