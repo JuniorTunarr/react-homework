@@ -4,7 +4,7 @@
 
 ## 결과(구현화면) - 추후 배포 예정
 
-[랜딩페이지Result](src/assets/landingResult.gif)
+![랜딩페이지Result](src/assets/landingResult.gif)
 
 ### 포켓 베이스 DB 구성
 
@@ -17,24 +17,49 @@
 
 ## 파일 구조
 
-```jsx
 src
+
+```js
+src
+├── assets
+├── components // 하위 구조 하단 작성
+├── layout
+│    ├── FooterBar.jsx
+│    ├── HeaderBar.jsx
+│    └── RootLayout.jsx
+├── styles
+│    └── tailwind.css
 ├── App.css
 ├── App.jsx
-├── layout
-│   ├── Header
-│   │    ├── parts
-│   │    │    ├── MainMenu.jsx
-│   │    │    ├── SubButtons.jsx
-│   │    │    ├── Heading.jsx
-│   │    │    ├── MenuLists.jsx
-│   │    │    ├── MenuList.jsx
-│   │    │    └── Button.jsx
-│   │    ├── Header.css
-│   │    └── Header.jsx
-│   └──  RootLayout.jsx
-├── index.css
 └── main.jsx
+```
+
+components
+
+```js
+components
+├── Common
+│    ├── Spinner.jsx
+│    ├── SubTitleWrapper.jsx
+│    └── TitleWrapper.jsx
+├── Footer
+│    ├── FooterAbout.jsx
+│    ├── FooterCopyright.jsx
+│    ├── FooterIllust.jsx
+│    └── FooterInfo.jsx
+├── Header
+│    ├── GlobalNavigation.jsx
+│    └── HeaderHeading.jsx
+└── Home
+     ├── HomeWrapper.jsx
+     ├── HomeHeading.jsx
+     ├── HomeContents.jsx
+     ├── CourseCategory.jsx
+     ├── .jsx
+     ├── MenuLists.jsx
+     ├── MenuList.jsx
+     └── Button.jsx
+
 ```
 
 ## 회고
